@@ -1,0 +1,27 @@
+@font-face { font-family: Poppins; font-weight: 400; src: url(fonts/Poppins-Regular.ttf); font-display: swap; }
+@font-face { font-family: Poppins; font-weight: 600; src: url(fonts/Poppins-SemiBold.ttf); font-display: swap; }
+@font-face { font-family: Poppins; font-weight: 800; src: url(fonts/Poppins-ExtraBold.ttf); font-display: swap; }
+:root { --brand: #09C8DA; --ink: #061733; --card: #0E2445; --border: #1C3558; --text: #FFFFFF; --body: #D3DCE8; --muted: #A3B3C8; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ink); color: var(--body); font: 16px/1.65 Poppins, system-ui, sans-serif; }
+a { color: var(--brand); }
+header, main, footer { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+header { padding-top: 24px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text); font-weight: 800; font-size: 22px; text-decoration: none; }
+.brand img { border-radius: 9px; }
+main { padding-top: 24px; padding-bottom: 48px; }
+h1 { color: var(--text); font-size: 30px; line-height: 1.25; margin: 16px 0 8px; }
+h2 { color: var(--text); font-size: 20px; margin: 32px 0 8px; }
+ul, ol { padding-left: 22px; }
+li { margin: 4px 0; }
+strong { color: var(--text); font-weight: 600; }
+.updated { color: var(--muted); font-size: 14px; margin-top: 0; }
+.hero { text-align: center; padding: 40px 0 16px; }
+.hero img { border-radius: 28px; }
+.hero h1 { font-size: 34px; }
+.hero p { color: var(--muted); font-size: 18px; max-width: 480px; margin: 8px auto 0; }
+.links { display: grid; gap: 12px; margin-top: 40px; }
+.links a { display: block; background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 16px 20px; color: var(--text); font-weight: 600; text-decoration: none; }
+.links a span { display: block; color: var(--muted); font-weight: 400; font-size: 14px; }
+footer { border-top: 1px solid var(--border); padding-top: 20px; padding-bottom: 40px; color: var(--muted); font-size: 14px; }
+footer nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 8px; }
